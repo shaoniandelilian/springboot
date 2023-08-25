@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.demo.mapper.SatelliteSceneMapper">
+    <delete id="truncateTable" >
+        TRUNCATE TABLE satellite_scene_setting;
+    </delete>
+    <delete id="console_showTable" >
+        TRUNCATE TABLE console_show;
+    </delete>
+    <delete id="messageTable" >
+        TRUNCATE TABLE message;
+    </delete>
+    <delete id="hhhTable" >
+        TRUNCATE TABLE hhh;
+    </delete>
+    <delete id="hhh1Table" >
+        TRUNCATE TABLE hhh1;
+    </delete>
+    <delete id="hhh2Table" >
+        TRUNCATE TABLE hhh2;
+    </delete>
+    <delete id="hhh3Table" >
+        TRUNCATE TABLE hhh3;
+    </delete>
+    <insert id="insertSatelliteScene" parameterType="com.demo.model.SatelliteScene">
+        INSERT INTO satellite_scene_setting (gaogui_num,zhonggui_num,digui_num,attack_target,fire_intensity)
+        VALUES (#{gaogui_num}, #{zhonggui_num},#{digui_num},#{attack_target},#{fire_intensity})
+    </insert>
+
+</mapper>

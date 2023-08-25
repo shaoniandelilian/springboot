@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>基于智能体的航天装备体系推演系统</title>
+
+</head>
+<body>
+<h1 style="text-align: center;">请选择卫星场景相关参数</h1>
+<div style="height: 150px;"></div>
+<form action="/index" style="text-align: center;"  method="GET">
+  <label >高轨卫星数量：</label>
+  <select id="gaogui_num" name="gaogui_num">
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select><br><br>
+    <label >中轨卫星数量：</label>
+  <select id="midgui_num" name="midgui_num">
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+  </select><br><br>
+    <label >低轨卫星数量：</label>
+  <select id="digui_num" name="digui_num">
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+  </select><br><br>
+    <label >选择攻击目标：</label>
+  <select id="attack_target" name="attack_target">
+    <option value="Russia">Russia</option>
+    <option value="Cuba">Cuba</option>
+    <option value="Japan">Japan</option>
+      <option value="America">America</option>
+
+  </select><br><br>
+    <label >选择现有场景：</label>
+  <select id="scense" name="scense">
+    <option value="场景1">场景1</option>
+    <option value="场景2">场景2</option>
+    <option value="场景3">场景3</option>
+      <option value="场景4">场景4</option>
+
+  </select><br><br>
+    <label >选择火力强度：</label>
+  <select id="attack_level" name="attack_level">
+    <option value="低">低</option>
+    <option value="中">中</option>
+    <option value="高">高</option>
+  </select><br><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.demo.mapper.List4Mapper">
+    <select id="findAll" resultType="grouping">
+    SELECT
+    id,
+    head,
+    element
+    FROM
+    hhh
+    ORDER BY id DESC LIMIT 6
+</select>
+</mapper>

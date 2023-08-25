@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>基于智能体的航天装备体系推演系统</title>
+
+</head>
+<body>
+<h1 style="text-align: center;">这是一个测试后端数据能否传到前端的页面</h1>
+<div style="height: 150px;"></div>
+
+</body>
+</html>
+<script>
+  $.ajax({
+  url: '/test',
+  method: 'GET', // 或者使用POST请求
+  success: function(response) {
+    // 处理后端返回的数据
+    var data = response.data; // 假设后端返回的数据是一个JSON对象，其中包含"data"字段
+    console.log(data); // 打印数据到控制台
+    // 在页面中展示数据或进行其他操作
+  },
+  error: function(xhr, status, error) {
+    // 处理请求错误
+    console.error(error);
+  }
+});
+</script>>
